@@ -1,7 +1,7 @@
 # truffleProject
 TD 5 - Prog Blockchain
 
-## Instalation
+## Installation
 
 ``npm install -g truffle``
 
@@ -95,6 +95,55 @@ La fonction ``getToken()`` attribue les Tokens aux utilisateurs en fonction de l
 Le but de cette fonction est de ne pas laisser une petite partie des utilisateurs avoir tous la plus grande partie des token.
  
 ## Create a migration to deploy your contract(s)
+
+``npm install -g ganache-cli``
+
+``ganache-cli``
+
+``truffle migrate``
+
+``Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'development'
+> Network id:      1615747796017
+> Block gas limit: 6721975 (0x6691b7)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'Migrations'
+   ----------------------
+   > transaction hash:    0x6c4139cff74ff0b735662d1e7f5f226aab01c179c5e178c7e9035ff6a16aa1f2
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x05Bf0fA9a532B6E8B40A9DF10f31Ca333E98D23E
+   > block number:        1
+   > block timestamp:     1615747824
+   > account:             0xB4A033F84d660A3052C66597008A91a4fb0b75fC
+   > balance:             99.99626074
+   > gas used:            186963 (0x2da53)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.00373926 ETH
+
+
+   > Saving migration to chain.
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.00373926 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.00373926 ETH
+``
 
 ```solidity
     contract Migrations {
