@@ -137,6 +137,29 @@ La fonction ``addAllowedUser`` ajoute tous les utilisateurs sans distinction dan
 
 ## Implement multi level distribution
 
+```solidity
+     function setTier(address _user) private {
+            // the first tier is a 100 users
+            if (tierCount <= 100) {
+                tiers[_user] = 1;
+            }
+
+            // the second tier is till we reach 1000 users
+            else if (tierCount > 100 && tierCount <= 1000) {
+                tiers[_user] = 2;
+            }
+
+            // the third tier is over 1000 users
+            else if (tierCount > 1000) {
+                tiers[_user] = 3;
+            }
+
+            tierCount += 1;
+        }
+```      
+
+Le but de cette fonction est de ne pas laisser une petite partie des utilisateurs avoir tous la plus grande partie des token.
+
 ## Implement air drop functions
 
 ```solidity
