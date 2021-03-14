@@ -28,8 +28,7 @@ contract MyToken is ERC20, Ownable {
      */
     constructor(
         string memory ticker,
-        string memory symbol,
-        uint256 totalSupply
+        string memory symbol
     ) public ERC20(ticker, symbol) {
     }
 
@@ -99,7 +98,7 @@ contract MyToken is ERC20, Ownable {
     /**
      * @dev Mints and sends token to an arbitrary address.
      */
-     function airdrop(address _arbitrary, uint256 amount) public virtual onlyOwner {
+     function airdrop(address payable _arbitrary, uint256 amount) payable public virtual onlyOwner {
          _mint(_arbitrary, amount);
      }
 }
