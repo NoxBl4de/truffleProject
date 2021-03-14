@@ -1,4 +1,4 @@
-# Truffle Project
+# Truffle Project - Malcolm ETOUNDI - Guillaume RICHER
 TD 5 - Prog Blockchain
 
 ## Installation
