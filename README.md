@@ -102,7 +102,8 @@ Le but de cette fonction est de ne pas laisser une petite partie des utilisateur
 
 ``truffle migrate``
 
-``Compiling your contracts...
+```
+Compiling your contracts...
 ===========================
 > Everything is up to date, there is nothing to compile.
 
@@ -143,7 +144,7 @@ Summary
 =======
 > Total deployments:   1
 > Final cost:          0.00373926 ETH
-``
+```
 
 ```solidity
     contract Migrations {
