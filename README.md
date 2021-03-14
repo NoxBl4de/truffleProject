@@ -164,6 +164,37 @@ Summary
       }
     }
 ```
+
+```
+Transaction: 0x6c4139cff74ff0b735662d1e7f5f226aab01c179c5e178c7e9035ff6a16aa1f2
+  Contract created: 0x05bf0fa9a532b6e8b40a9df10f31ca333e98d23e
+  Gas usage: 186963
+  Block Number: 1
+  Block Time: Sun Mar 14 2021 19:50:24 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_getCode
+eth_getTransactionByHash
+eth_getBlockByNumber
+eth_getBalance
+eth_getBlockByNumber
+eth_getBlockByNumber
+eth_sendTransaction
+
+  Transaction: 0xbd1e71e3c334cb2d7339a9e3ed0168b0659c235b6c6dc5a1ab2b6143acc5b795
+  Gas usage: 42335
+  Block Number: 2
+  Block Time: Sun Mar 14 2021 19:50:25 GMT+0100 (heure normale d’Europe centrale)
+
+eth_getTransactionReceipt
+eth_blockNumber
+net_version
+eth_accounts
+eth_getBlockByNumber
+eth_getCode
+eth_getBlockByNumber
+eth_call
+```
 ## Implement customer allow listing
 
 ```solidity
