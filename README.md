@@ -1,4 +1,4 @@
-# truffleProject
+# Truffle Project
 TD 5 - Prog Blockchain
 
 ## Installation
@@ -94,7 +94,7 @@ La fonction ``getToken()`` attribue les Tokens aux utilisateurs en fonction de l
 
 Le but de cette fonction est de ne pas laisser une petite partie des utilisateurs avoir tous la plus grande partie des token.
  
-## Create a migration to deploy your contract(s)
+## Create a migration to deploy your contract(s) (Migrate to Ganache)
 
 ``npm install -g ganache-cli``
 
