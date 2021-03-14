@@ -119,7 +119,7 @@ Starting migrations...
 1_initial_migration.js
 ======================
 
-   Deploying 'Migrations'
+   Deploying 'MyToken'
    ----------------------
    > transaction hash:    0x6c4139cff74ff0b735662d1e7f5f226aab01c179c5e178c7e9035ff6a16aa1f2
    > Blocks: 0            Seconds: 0
@@ -144,25 +144,6 @@ Summary
 =======
 > Total deployments:   1
 > Final cost:          0.00373926 ETH
-```
-
-```solidity
-    contract Migrations {
-      address public owner = msg.sender;
-      uint public last_completed_migration;
-
-      modifier restricted() {
-        require(
-          msg.sender == owner,
-          "This function is restricted to the contract's owner"
-        );
-        _;
-      }
-
-      function setCompleted(uint completed) public restricted {
-        last_completed_migration = completed;
-      }
-    }
 ```
 
 ```
@@ -253,3 +234,50 @@ Cette fonction permet de créditer un montant de token arbitraire à une adresse
 
 ## Deploy to a testnet
 
+``truffle migrate --network ropsten``
+
+```
+Compiling your contracts...
+===========================
+> Everything is up to date, there is nothing to compile.
+
+
+
+Starting migrations...
+======================
+> Network name:    'ropsten'
+> Network id:      3
+> Block gas limit: 8000000 (0x7a1200)
+
+
+1_initial_migration.js
+======================
+
+   Deploying 'MyToken'
+   -------------------
+   > transaction hash:    0x22103e0ac815b8506047b81a8ac9980a2ef3431e28373eb2040bf6a5704a2803
+   > Blocks: 2            Seconds: 16
+   > contract address:    0x7e0D7Bf00A6693c8Ba3a52D462E7E4081Db6d0Be
+   > block number:        9835285
+   > block timestamp:     1615752610
+   > account:             0x13996883A32288a28f9560D28d27B131758354c5
+   > balance:             2.96432498
+   > gas used:            1783751 (0x1b37c7)
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.03567502 ETH
+
+   Pausing for 2 confirmations...
+   ------------------------------
+   > confirmation number: 1 (block: 9835286)
+   > confirmation number: 2 (block: 9835287)
+   > Saving artifacts
+   -------------------------------------
+   > Total cost:          0.03567502 ETH
+
+
+Summary
+=======
+> Total deployments:   1
+> Final cost:          0.03567502 ETH
+```
